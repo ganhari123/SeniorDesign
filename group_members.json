@@ -1,0 +1,44 @@
+{
+	"members": [
+		{
+			"name": "Joanne"
+			, "major": "Computer Engineering"
+			, "picLink": ""
+			, "bio": ""
+
+		},
+
+		{
+			"name": "Anjali"
+			, "major": "Computer Engineering"
+			, "picLink": ""
+			, "bio": ""
+
+		},
+
+		{
+			"name": "Ganapathy"
+			, "major": "Computer Engineering"
+			, "picLink": ""
+			, "bio": ""
+
+		},
+
+		{
+			"name": "Annu"
+			, "major": "Computer Engineering"
+			, "picLink": ""
+			, "bio": ""
+
+		},
+
+		{
+			"name": "Neha"
+			, "major": "Computer Engineering"
+			, "picLink": ""
+			, "bio": ""
+
+		},
+
+	]
+}

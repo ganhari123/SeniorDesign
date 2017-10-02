@@ -1,0 +1,359 @@
+html {
+   margin: 0px;
+   height: 100%;
+   width: 100%;
+
+}
+
+body {
+	margin: 0;
+   min-height: 100%;
+   width: 100%;
+   background-color: #763234;
+}
+.changeBack2 {
+	background-color: #D5D5D5;
+	-webkit-transition: background-color 500ms ease-in-out;
+    -ms-transition: background-color 500ms ease-in-out;
+    transition: background-color 500ms ease-in-out;
+}
+.changeBack1 {
+	background-color: #763234;
+	-webkit-transition: background-color 500ms ease-in-out;
+    -ms-transition: background-color 500ms ease-in-out;
+    transition: background-color 500ms ease-in-out;
+}
+
+.changeBack3 {
+	background-color: #763234;
+	-webkit-transition: background-color 500ms ease-in-out;
+    -ms-transition: background-color 500ms ease-in-out;
+    transition: background-color 500ms ease-in-out;
+}
+
+#toolbar {
+	margin: 0;
+	text-align: center;
+	position: fixed;
+	z-index:2;
+	opacity: 1.0;
+	width: 100%;
+	transition: top 0.2s ease-in-out;
+	box-shadow: 0 0 1px black;
+	height: 70px;
+	display: block;
+	background-color: #763234;
+}
+
+#title {
+	color: white;
+}
+#sub_tool_bar {
+	text-align: center;
+	display: block;
+	background-color: #565656;
+	height: 50px;
+	opacity: 1.0;
+	transition: top 0.2s ease-in-out;
+	position: fixed;
+	z-index: 1;
+	box-shadow: 0 0 30px black;
+	width: 100%;
+	top:70px;
+
+}
+
+#item_list {
+	width: 100%;
+	font-size: 16px;
+	color: white;
+	margin-left: 2px;
+	margin-top: 17px;
+	list-style-type: none;
+    padding: 0;
+}
+
+#menu_item_1 {
+	display: inline-block;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+
+#menu_item_2 {
+	display: inline-block;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+
+#menu_item_3 {
+	display: inline-block;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+.underline {
+	border-bottom: 2px solid white;
+}
+
+#menu_item_1:hover {
+	color: #D5D5D5;
+	cursor: pointer;
+}
+
+#menu_item_2:hover {
+	color: #D5D5D5;
+	cursor: pointer;
+}
+
+#menu_item_3:hover {
+	color: #D5D5D5;
+	cursor: pointer;
+}
+
+#scroll_body {
+	overflow-y: auto;
+	display: block;
+	margin-top: 115px;
+	width: 100%;
+	height: 1500px;
+}
+
+#goal_div {
+	opacity: 1.0;
+	width: 100%;
+	height: 900px;
+	border-bottom: 5px solid white;
+}
+
+#team_member_div {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	height: 800px;
+	top: 1100px;
+	border-bottom: 5px solid white;
+	white-space: nowrap;
+}
+
+#team_set::-webkit-scrollbar {
+	display: none;
+}
+
+#team_set {
+	width: 100%;
+	white-space: nowrap;
+	overflow-x: scroll;
+	position: relative;
+	top: 0%;
+	left: 0%;
+}
+
+.team {
+/*	  width: 300px; height: 400px;
+	  margin-right: 10px;
+	  opacity: 0;
+	  padding: 25px;
+	  box-sizing: border-box;
+
+	  display:inline-block;
+	  border-radius: 10px;*/
+	  vertical-align:middle;
+	  position: relative;
+	  left: 20px;
+	  top: 0px;
+	  width: 400px;
+	  height: 500px;
+	  margin-bottom: 20px;
+	  display: inline-block;
+	  background: #3b3b3b;
+	  border-radius: 5px;
+	  
+}
+.team:hover {
+	box-shadow: 5px 5px 20px black;
+	/*height: 410px;
+	width: 310px;*/
+	cursor: pointer;
+}
+
+#team_member_one {
+	position: relative;
+	left: 0px;
+}
+
+#team_member_two {
+	position: relative;
+	left: 50px;
+}
+
+#team_member_three {
+	position: relative;
+	left: 100px;
+}
+
+#team_member_four {
+	position: relative;
+	left: 150px;
+}
+
+#team_member_five {
+	position: relative;
+	left: 200px;
+}
+
+
+@keyframes team_member_one {
+    0%   {left: -5000px;}
+    100% {left: 0px;}
+}
+
+.opacity-one {
+	opacity: 1.0;
+	-webkit-transition: opacity 500ms ease-in-out;
+    -ms-transition: opacity 500ms ease-in-out;
+    transition: opacity 500ms ease-in-out; 
+    animation-name: team_member_one;
+    animation-duration: 0.5s;
+}
+
+
+@keyframes team_member_two {
+    0%   {left: -5000px;}
+    100% {left: 50px;}
+}
+
+.opacity-two {
+	opacity: 1.0;
+	-webkit-transition: opacity 500ms ease-in-out;
+    -ms-transition: opacity 500ms ease-in-out;
+    transition: opacity 500ms ease-in-out; 
+    animation-name: team_member_two;
+    animation-duration: 1.0s;
+}
+
+
+
+@keyframes team_member_three {
+    0%   {left: -5000px;}
+    100% {left: 100px;}
+}
+
+.opacity-three {
+	opacity: 1.0;
+	-webkit-transition: opacity 500ms ease-in-out;
+    -ms-transition: opacity 500ms ease-in-out;
+    transition: opacity 500ms ease-in-out; 
+    animation-name: team_member_three;
+    animation-duration: 1.5s;
+}
+
+
+
+@keyframes team_member_four {
+    0%   {left: -5000px;}
+    100% {left: 150px;}
+}
+
+.opacity-four {
+	opacity: 1.0;
+	-webkit-transition: opacity 500ms ease-in-out;
+    -ms-transition: opacity 500ms ease-in-out;
+    transition: opacity 500ms ease-in-out; 
+    animation-name: team_member_four;
+    animation-duration: 2.0s;
+}
+
+
+
+@keyframes team_member_five {
+    0%   {left: -5000px;}
+    100% {left: 200px;}
+}
+
+.opacity-five {
+	opacity: 1.0;
+	-webkit-transition: opacity 500ms ease-in-out;
+    -ms-transition: opacity 500ms ease-in-out;
+    transition: opacity 500ms ease-in-out; 
+    animation-name: team_member_five;
+    animation-duration: 2.5s;
+}
+
+
+/*.opacity {
+	opacity: 1.0;
+	-webkit-transition: opacity 500ms ease-in-out;
+    -ms-transition: opacity 500ms ease-in-out;
+    transition: opacity 500ms ease-in-out; 
+    animation-name: example;
+    animation-duration: 2s;
+}*/
+
+.name {
+	color: white;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #888;
+     /* Could be more or less, depending on screen size */
+    overflow-y: scroll;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#resources_div {
+	width: 100%;
+	height: 400px;
+}
+
+#pp:hover {
+	box-shadow: 0px 0px 0px 0px black;
+}
+
+#pp {
+	box-shadow: 10px 10px 10px 0px black;
+	font-size: 70px; 
+	text-decoration: none; 
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+}

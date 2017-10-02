@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="main.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script src="handlebars-v4.0.8.js"></script>
+<script src="main.js"></script>
+<title>J.A.G.A.N</title>
+</head>
+<body>
+
+<div id="toolbar">
+	<h1 id="title">OPERATION J.A.G.A.N</h1>
+</div>
+<div id="sub_tool_bar" >
+	<ul id="item_list">
+	  <li id="menu_item_1">Project Proposal</li>
+	  <li id="menu_item_2">Team Members</li>
+	</ul>
+</div>
+<div id="scroll_body">
+	<div id="goal_div" style="text-align: center;">
+		<div style=" background: #3b3b3b; 	margin-right: 20px; border: 5px solid black; margin-top: 350px; display: inline-block;">
+			<a id="pp" target="_blank" href="Project-Proposal.pdf" >Project Proposal</a>
+		</div>
+		<div style=" background: #3b3b3b; 	border: 5px solid black; margin-top: 350px; display: inline-block;">
+			<a id="pp" target="_blank" href="Senior-Design-Presentation.pdf" >Proposal Presentation</a>
+		</div>
+	</div>
+
+	<div id="team_member_div">
+		<h1 style=" opacity: 1.0;
+	-webkit-transition: opacity 500ms ease-in-out;
+    -ms-transition: opacity 500ms ease-in-out;
+    transition: opacity 500ms ease-in-out;  color: white">M e e t T h e T e a m</h1><br><br>
+			<div id="team_set">
+				<div class="team" id="team_member_one">
+					<h1 class="name">Joanne</h1>
+					<img src="Joanne.jpg" alt="Smiley face" style="max-height: 80%; max-width: 90%;">
+				</div>
+				<div class="team" id="team_member_two">
+					<h1 class="name">Anjali</h1>
+					<img src="Anjali.jpg" alt="Smiley face" style="max-height: 80%; max-width: 90%;">
+				</div>
+
+				<div class="team" id="team_member_three">
+					<h1 class="name">Ganapathy</h1>
+					<img src="Hari.jpg" alt="Smiley face" style="max-height: 80%; max-width: 90%;">
+				</div>
+				<div class="team" id="team_member_four">
+					<h1 class="name">Annu</h1>
+					<img src="Annu.jpg" alt="Smiley face" style="max-height: 80%; max-width: 90%;">
+				</div>
+				<div class="team" id="team_member_five">
+					<h1 class="name"> Neha</h1>
+					<img src="Neha.jpg" alt="Smiley face" style="max-height: 80%; max-width: 90%;">
+				</div>
+			</div>
+
+	</div>
+
+	<!-- <div id="resources_div">
+	</div> -->
+</div>
+
+<script id="entry-template" type="text/x-handlebars-template">
+	    	<span class="close">&times;</span>
+	    	<h1 id="title" style="color: black"> {{name}} </h1>
+	    	<img src={{picLink}} alt="Smiley face" style=" max-height: 50%%; max-width: 50%;"><br>
+	    	<div style=" background: #3b3b3b; 	margin-right: 20px; border: 5px solid black; margin-top: 20px; display: inline-block;">
+				<a id="pp" target="_blank" href={{technicalPaper}} >Technical Review Paper</a>
+			</div>
+</script>
+
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+
+	  <!-- Modal content -->
+	  <div class="modal-content">
+	    
+	  </div>
+
+	</div>
+
+
+
+
+
+</body>
+</html>
